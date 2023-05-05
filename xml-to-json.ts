@@ -85,7 +85,7 @@ export function xml2json(xml, tab = '') {
       } else if (xml.nodeType == 9) { // document.node
         o = X.toObj(xml.documentElement)
       } else
-        alert('unhandled node type: ' + xml.nodeType)
+        console.warn('unhandled node type: ' + xml)
       return o
     },
     toJson: function (o, name, ind) {
