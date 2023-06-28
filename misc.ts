@@ -108,6 +108,6 @@ export function gotoRedirectUrl(router) {
 }
 
 export function setRedirectUrl(url) {
-  Storage.get('redirect_url', url)
+  Storage.set('redirect_url', url)
 }
 
